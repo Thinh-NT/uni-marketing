@@ -48,4 +48,6 @@ def subcribe(email):
         auth=('Hello There', MAILCHIMP_API_KEY)
     )
 
+    print(r.json())
+
     return r.status_code, r.json()
