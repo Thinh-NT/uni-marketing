@@ -47,4 +47,5 @@ def subcribe(email):
         payload,
         auth=('Hello There', MAILCHIMP_API_KEY)
     )
+
     return r.status_code, r.json()
